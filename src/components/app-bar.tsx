@@ -103,6 +103,17 @@ function ResponsiveAppBar() {
                 </Typography>
               </MenuItem>
 
+              <MenuItem
+                key="advertisements"
+                onClick={handleCloseNavMenu}
+                component={Link}
+                href="/advertisements"
+              >
+                <Typography textAlign="center">
+                  {t("common:navigation.advertisements")}
+                </Typography>
+              </MenuItem>
+
               {!!user?.role &&
                 [RoleEnum.ADMIN].includes(user?.role?.id) && [
                   <MenuItem
@@ -168,6 +179,15 @@ function ResponsiveAppBar() {
               href="/"
             >
               {t("common:navigation.home")}
+            </Button>
+
+            <Button
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, color: "white", display: "block" }}
+              component={Link}
+              href="/advertisements"
+            >
+              {t("common:navigation.advertisements")}
             </Button>
 
             {!!user?.role && [RoleEnum.ADMIN].includes(user?.role?.id) && (

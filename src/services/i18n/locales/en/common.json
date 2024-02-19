@@ -3,6 +3,7 @@
   "loading": "Loading ...",
   "navigation": {
     "home": "Home",
+    "advertisements": "Advertisements",
     "signIn": "Sign In",
     "signUp": "Sign Up",
     "profile": "Profile",
